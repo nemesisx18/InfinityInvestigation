@@ -165,7 +165,7 @@ public class Leaderboard : MonoBehaviour
     }
 
     [ContextMenu("Save current leaderboard")]
-    private void NextStage()
+    private void SaveCurrentLeaderboard()
     {
         SaveData.SaveInstance.UpdateLeaderboard(currentLevel, realRatings);
     }
