@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
+    public static Manager ManagerInstance;
+    
     public GameObject[] gameObjects;
     public bool isActive = false;
     public float timer = 0;
@@ -13,6 +15,18 @@ public class Manager : MonoBehaviour
     public int puzzleDone;
 
     [SerializeField] private Leaderboard leaderboard;
+
+    private void Awake()
+    {
+        if (ManagerInstance == null)
+        {
+            ManagerInstance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {

@@ -13,6 +13,9 @@ public class Leaderboard : MonoBehaviour
 
     public List<int> score = new List<int>();
 
+    [SerializeField] private GameObject nextButton;
+    [SerializeField] private GameObject restartButton;
+
     [SerializeField] private Transform leaderboardParent;
     [SerializeField] private LeaderboardStand leaderboardPrefab;
 
@@ -108,10 +111,13 @@ public class Leaderboard : MonoBehaviour
                         break;
                     }
                 }
+
+                nextButton.SetActive(true);
             }
             else
             {
                 nextStage = false;
+                restartButton.SetActive(true);
             }
         }
 
@@ -165,7 +171,7 @@ public class Leaderboard : MonoBehaviour
     }
 
     [ContextMenu("Save current leaderboard")]
-    private void SaveCurrentLeaderboard()
+    public void SaveCurrentLeaderboard()
     {
         SaveData.SaveInstance.UpdateLeaderboard(currentLevel, realRatings);
     }
