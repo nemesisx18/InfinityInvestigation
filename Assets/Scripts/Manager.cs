@@ -12,6 +12,8 @@ public class Manager : MonoBehaviour
     public Text  rewardTXT; // Referensi ke komponen Text
     public int puzzleDone;
 
+    [SerializeField] private Leaderboard leaderboard;
+
     private void Start()
     {
         timer = 0;
@@ -50,21 +52,21 @@ public class Manager : MonoBehaviour
         }
 
         // Mengecek kondisi timer dan memberikan skor sesuai dengan nilai timer
-        if (timer < 30f)
+        if (timer < 15f)
         {
             score = 500;
         }
+        else if (timer < 30f)
+        {
+            score = 350;
+        }
+        else if (timer < 45f)
+        {
+            score = 150;
+        }
         else if (timer < 60f)
         {
-            score = 420;
-        }
-        else if (timer < 90f)
-        {
-            score = 240;
-        }
-        else if (timer < 120f)
-        {
-            score = 50;
+            score = 10;
         }
 
     }
@@ -79,5 +81,10 @@ public class Manager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void SaveCurrentScore()
+    {
+        leaderboard.GenerateLeaderboard(SaveData.SaveInstance.CurrentUsername, score);
     }
 }
