@@ -4,14 +4,14 @@ using UnityEngine.UI;
 public class Manager : MonoBehaviour
 {
     public static Manager ManagerInstance;
-    
+
     public GameObject[] gameObjects;
     public bool isActive = false;
     public float timer = 0;
     public int score = 0;
     public GameObject nextScene;
     bool uda;
-    public Text  rewardTXT; // Referensi ke komponen Text
+    public Text rewardTXT; // Referensi ke komponen Text
     public int puzzleDone;
 
     [SerializeField] private Leaderboard leaderboard;
@@ -41,12 +41,12 @@ public class Manager : MonoBehaviour
             isActive = AreAllGameObjectsActive();
 
 
-            if(puzzleDone >= 4)
+            if (puzzleDone >= 4)
             {
                 isActive = true;
             }
         }
-       
+
 
 
         // Mengatur timer
@@ -100,5 +100,10 @@ public class Manager : MonoBehaviour
     public void SaveCurrentScore()
     {
         leaderboard.GenerateLeaderboard(SaveData.SaveInstance.CurrentUsername, score);
+    }
+
+    public void SelfDestruct()
+    {
+        Destroy(gameObject);
     }
 }

@@ -21,7 +21,6 @@ public class Leaderboard : MonoBehaviour
 
     [SerializeField] private int maxLeaderboard = 3;
 
-    [SerializeField] private bool nextStage = true;
     private bool alreadySpawn = false;
 
     private void Start()
@@ -95,31 +94,37 @@ public class Leaderboard : MonoBehaviour
 
             Debug.Log("Current lowest score is: " + minScore);
 
-            //Check if new score higher than lowest score avaiable then change it into new score
-            if (score > minScore)
+            if(score == 500)
             {
-                for (int i = 0; i < realRatings.Count; i++)
-                {
-                    //Remove the lowest score
-                    if ((int)realRatings[i].ScoreValue == minScore)
-                    {
-                        Debug.Log("Lowest score index: " + i);
-                        realRatings.RemoveAt(i);
-
-                        //Add the new score
-                        var newScore = new Rating() { Username = username, ScoreValue = (Scoring)score };
-
-                        realRatings.Add(newScore);
-                        break;
-                    }
-                }
-
                 nextButton.SetActive(true);
             }
             else
             {
-                nextStage = false;
-                restartButton.SetActive(true);
+                //Check if new score higher than lowest score avaiable then change it into new score
+                if (score >= minScore)
+                {
+                    for (int i = 0; i < realRatings.Count; i++)
+                    {
+                        //Remove the lowest score
+                        if ((int)realRatings[i].ScoreValue == minScore)
+                        {
+                            Debug.Log("Lowest score index: " + i);
+                            realRatings.RemoveAt(i);
+
+                            //Add the new score
+                            var newScore = new Rating() { Username = username, ScoreValue = (Scoring)score };
+
+                            realRatings.Add(newScore);
+                            break;
+                        }
+                    }
+
+                    nextButton.SetActive(true);
+                }
+                else
+                {
+                    restartButton.SetActive(true);
+                }
             }
         }
 

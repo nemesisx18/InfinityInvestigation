@@ -15,7 +15,7 @@ public class ShowStar : MonoBehaviour
         {
             starProgess[2].SetActive(true);
         }
-        else if(currentScore <= 350)
+        else if(currentScore <= 350 && currentScore > 150)
         {
             starProgess[1].SetActive(true);
         }
