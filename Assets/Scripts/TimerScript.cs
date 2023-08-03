@@ -5,16 +5,10 @@ public class TimerScript : MonoBehaviour
 {
     //public float timeLimit = 120; // Waktu total dalam detik
     public float currentTime; // Waktu saat ini
-    public Text timerText; // Komponen Text untuk menampilkan timer
-
+    public Text timerText; // Komponen Text untuk menampilkan ti
     public bool timerIsRunning = true;
 
-    private void Start()
-    {
-        currentTime = 120; // Mengatur waktu saat ini menjadi 0
-    }
-
-    private void Update()
+   private void Update()
     {
         if (timerIsRunning)
         {

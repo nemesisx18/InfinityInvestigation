@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveGame : MonoBehaviour
 {
-
-    public GameObject k1, k2 ,k3;
     public int checkpoint;
 
     // Start is called before the first frame update
@@ -16,17 +13,29 @@ public class SaveGame : MonoBehaviour
 
     void Start()
     {
-        if(checkpoint == 1)
+        if (checkpoint == 1)
         {
-            k1.SetActive(true);
+            var sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName != "Level1")
+            {
+                SceneManager.LoadScene("Level1");
+            }
         }
         if (checkpoint == 2)
         {
-            k2.SetActive(true);
+            var sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName != "Level2")
+            {
+                SceneManager.LoadScene("Level2");
+            }
         }
         if (checkpoint == 3)
         {
-            k3.SetActive(true);
+            var sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName != "Level3")
+            {
+                SceneManager.LoadScene("Level3");
+            }
         }
     }
 

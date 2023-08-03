@@ -79,6 +79,8 @@ public class Leaderboard : MonoBehaviour
             var test = new Rating() { Username = username, ScoreValue = (Scoring)score };
 
             realRatings.Add(test);
+
+            nextButton.SetActive(true);
         }
         else
         {
