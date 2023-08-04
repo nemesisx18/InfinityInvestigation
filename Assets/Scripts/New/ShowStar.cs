@@ -11,15 +11,15 @@ public class ShowStar : MonoBehaviour
     {
         currentScore = Manager.ManagerInstance.score;
 
-        if(currentScore == 500)
+        if(currentScore == 100)
         {
             starProgess[2].SetActive(true);
         }
-        else if(currentScore <= 350 && currentScore > 150)
+        else if(currentScore <= 60 && currentScore > 20)
         {
             starProgess[1].SetActive(true);
         }
-        else if(currentScore <= 150)
+        else if(currentScore <= 20)
         {
             starProgess[0].SetActive(true);
         }

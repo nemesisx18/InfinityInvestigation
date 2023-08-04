@@ -66,21 +66,21 @@ public class Manager : MonoBehaviour
         }
 
         // Mengecek kondisi timer dan memberikan skor sesuai dengan nilai timer
-        if (timer < 15f)
+        if (timer < 10f)
         {
-            score = 500;
+            score = 100;
+        }
+        else if (timer < 20f)
+        {
+            score = 60;
         }
         else if (timer < 30f)
         {
-            score = 350;
+            score = 20;
         }
-        else if (timer < 45f)
+        else if (timer >= 30f)
         {
-            score = 150;
-        }
-        else if (timer < 60f)
-        {
-            score = 10;
+            score = 0;
         }
 
     }
