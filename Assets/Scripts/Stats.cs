@@ -7,6 +7,8 @@ public class Stats : MonoBehaviour
     public bool energy;
     private int totalEnergy, totalCoin;
 
+    public EnergyReductionAnimation energyReductionAnimation;
+
     public void Update()
     {
         totalCoin = PlayerPrefs.GetInt("coin"); 
@@ -24,12 +26,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
-            totalEnergy = 80;
-            totalCoin = 100;
-            PlayerPrefs.SetInt("energy", totalEnergy);
-            PlayerPrefs.SetInt("coin", totalCoin);
-
-            PlayerPrefs.SetInt("NP", 1);
+            DefaultStats();
         }
         
 
@@ -61,6 +58,13 @@ public class Stats : MonoBehaviour
 
 
             int energyAmount = int.Parse(amount);
+            Debug.Log(energyAmount);
+            Debug.Log("energy:" + totalEnergy);
+
+            if (totalEnergy < energyAmount)
+            {
+                return;
+            }
 
             // Mengurangi total energi
             totalEnergy -= energyAmount;
@@ -68,13 +72,22 @@ public class Stats : MonoBehaviour
             // Memastikan total energi tidak negatif
             totalEnergy = Mathf.Max(totalEnergy, 0);
             PlayerPrefs.SetInt("energy", totalEnergy);
+
+            //energyReductionAnimation.klikKurangin();
         }
         else
         {
 
             int coinAmount = int.Parse(amount);
+            Debug.Log(coinAmount);
+            Debug.Log("energy:" + totalCoin);
 
             // Mengurangi total energi
+            if ( totalCoin < coinAmount)
+            {
+                return;
+            }
+
             totalCoin -= coinAmount;
 
             // Memastikan total energi tidak negatif
@@ -83,5 +96,15 @@ public class Stats : MonoBehaviour
         }
         // Memperbarui tampilan teks energi
         UpdatetextStats();
+    }
+
+    public void DefaultStats()
+    {
+        totalEnergy = 50;
+        totalCoin = 100;
+        PlayerPrefs.SetInt("energy", totalEnergy);
+        PlayerPrefs.SetInt("coin", totalCoin);
+
+        PlayerPrefs.SetInt("NP", 1);
     }
 }

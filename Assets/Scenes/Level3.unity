@@ -1043,6 +1043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fecb514168d854594272f4929f7603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stats: {fileID: 8970330625802112303}
 --- !u!4 &1346056602
 Transform:
   m_ObjectHideFlags: 0
@@ -4763,7 +4764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4546473662106928660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4907,7 +4908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4546473662123497167
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5886,6 +5887,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 8970330624331958143}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!222 &4546473662201946196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6263,6 +6276,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8970330624331958143}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!222 &4546473662282145617
@@ -11741,6 +11766,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 8970330624331958143}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!222 &4546473663101989228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16884,7 +16921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8970330624648794444
 MonoBehaviour:
   m_ObjectHideFlags: 0

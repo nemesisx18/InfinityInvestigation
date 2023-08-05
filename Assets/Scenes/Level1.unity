@@ -822,6 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fecb514168d854594272f4929f7603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stats: {fileID: 0}
 --- !u!4 &1026853109
 Transform:
   m_ObjectHideFlags: 0
@@ -1576,7 +1577,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 20
+          m_StringArgument: 10
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 401595928}
@@ -1590,6 +1591,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 391860719355641981}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &391860719355641982
 CanvasRenderer:
@@ -1613,7 +1626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2959,7 +2972,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 200
+          m_StringArgument: 30
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 401595928}
@@ -4138,7 +4151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &391860719691701978
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4763,7 +4776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391860719737076493}
   m_Layer: 5
-  m_Name: SCENE (14)
+  m_Name: SCENE (14) pergi lab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5751,7 +5764,7 @@ GameObject:
   - component: {fileID: 391860719906589089}
   - component: {fileID: 391860719906589088}
   m_Layer: 5
-  m_Name: SCENE (9)
+  m_Name: SCENE (9) Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6824,7 +6837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391860720074403266}
   m_Layer: 5
-  m_Name: SCENE (19) D5
+  m_Name: SCENE (19) D5 tangkap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7271,6 +7284,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5050081815165727554}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 391860720121180142}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &391860720121180143
 CanvasRenderer:
@@ -7896,7 +7933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391860720240977568}
   m_Layer: 5
-  m_Name: SCENE (7)
+  m_Name: SCENE (7) pilih level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9145,6 +9182,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5050081815165727554}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 391860720483966262}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &391860720483966263
 CanvasRenderer:
@@ -10398,7 +10459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &391860720661880526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11994,6 +12055,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5050081815165727554}
+        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+        m_MethodName: DecreaseEnergy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 20
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 391860720844613481}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &391860720844613482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12180,7 +12265,7 @@ GameObject:
   - component: {fileID: 391860720874612601}
   - component: {fileID: 391860720874612607}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Image (8) benar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14721,7 +14806,7 @@ GameObject:
   - component: {fileID: 391860721362080900}
   - component: {fileID: 391860721362080906}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Image (7) target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

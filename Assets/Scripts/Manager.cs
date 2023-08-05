@@ -54,14 +54,7 @@ public class Manager : MonoBehaviour
         {
             if (uda == false)
             {
-                nextScene.SetActive(true);
-                rewardTXT.text = "Skor Akhir : +" + score;
-                int plusJadiCoin = PlayerPrefs.GetInt("coin");
-                plusJadiCoin += score;
-                PlayerPrefs.SetInt("coin", plusJadiCoin);
-                uda = true;
-                uda = true;
-                isActive = false;
+                GameEnd();
             }
         }
 
@@ -111,5 +104,17 @@ public class Manager : MonoBehaviour
     {
         timer += 5;
         Debug.Log("wrong item");
+    }
+
+    public void GameEnd()
+    {
+        nextScene.SetActive(true);
+        rewardTXT.text = "Skor Akhir : +" + score;
+        int plusJadiCoin = PlayerPrefs.GetInt("coin");
+        plusJadiCoin += score;
+        PlayerPrefs.SetInt("coin", plusJadiCoin);
+        uda = true;
+        uda = true;
+        isActive = false;
     }
 }

@@ -30,6 +30,9 @@ public class TimerScript : MonoBehaviour
         if (currentTime <= 0)
         {
             timerIsRunning = false;
+
+            Manager.ManagerInstance.GameEnd();
+
             string timerString = string.Format("{0:00}:{1:00}", 0, 0);
             timerText.text = timerString;
         }

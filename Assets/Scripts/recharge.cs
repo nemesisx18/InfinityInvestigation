@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class recharge : MonoBehaviour
 {
+    public Stats Stats;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,7 @@ public class recharge : MonoBehaviour
     public void rechargee()
     {
         int total = PlayerPrefs.GetInt("energy");
-        total += 80;
+        total += 50;
         PlayerPrefs.SetInt("energy", total);
         Invoke("rechargee", 120);
 
@@ -23,5 +25,6 @@ public class recharge : MonoBehaviour
     public void relog()
     {
         SceneManager.LoadScene("Menu");
+        Stats.DefaultStats();
     }
 }
