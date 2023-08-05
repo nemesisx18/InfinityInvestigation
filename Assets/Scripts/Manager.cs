@@ -41,7 +41,7 @@ public class Manager : MonoBehaviour
             isActive = AreAllGameObjectsActive();
 
 
-            if (puzzleDone >= 4)
+            if (puzzleDone >= 10)
             {
                 isActive = true;
             }
@@ -105,5 +105,11 @@ public class Manager : MonoBehaviour
     public void SelfDestruct()
     {
         Destroy(gameObject);
+    }
+
+    public void WrongItem()
+    {
+        timer += 5;
+        Debug.Log("wrong item");
     }
 }

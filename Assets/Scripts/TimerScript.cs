@@ -34,4 +34,9 @@ public class TimerScript : MonoBehaviour
             timerText.text = timerString;
         }
     }
+
+    public void addTimePenalty()
+    {
+        currentTime -= 5;
+    }
 }
