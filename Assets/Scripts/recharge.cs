@@ -23,7 +23,18 @@ public class recharge : MonoBehaviour
             return;
         }
 
+        int currentEnergy = total;
+        Debug.Log("Before rechareg: " + currentEnergy);
         total += 50;
+        Debug.Log("Rechare: " + total);
+        if(total > 50)
+        {
+            total -= currentEnergy;
+            Debug.Log("after limitation " + total);
+        }
+
+        Debug.Log("After recharge if more than 50: " + total);
+
         PlayerPrefs.SetInt("energy", total);
         Invoke("rechargee", 60);
 

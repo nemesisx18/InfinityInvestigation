@@ -7148,7 +7148,7 @@ GameObject:
   - component: {fileID: 4546473662403010488}
   - component: {fileID: 4546473662403010470}
   m_Layer: 5
-  m_Name: Image (11) benar
+  m_Name: Image (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16740,7 +16740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
-  energyReductionAnimation: {fileID: 0}
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!1 &8970330624389502828
 GameObject:
   m_ObjectHideFlags: 0

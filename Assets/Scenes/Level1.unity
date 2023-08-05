@@ -7585,7 +7585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &391860720172560147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10924,7 +10924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &391860720751988070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12266,7 +12266,7 @@ GameObject:
   - component: {fileID: 391860720874612601}
   - component: {fileID: 391860720874612607}
   m_Layer: 5
-  m_Name: Image (8) benar
+  m_Name: Image (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

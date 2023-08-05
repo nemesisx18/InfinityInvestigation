@@ -12,8 +12,10 @@ public class Stats : MonoBehaviour
     public void Update()
     {
         //totalCoin = PlayerPrefs.GetInt("coin");
-        //Debug.Log("Update: " + gameObject.GetComponentInParent<RectTransform>().name + "" + totalCoin);
-        //totalEnergy = PlayerPrefs.GetInt("energy");
+        totalCoin = SaveData.SaveInstance.Coin;
+        totalEnergy = PlayerPrefs.GetInt("energy");
+
+        UpdatetextStats();
     }
     private void Start()
     {
@@ -36,7 +38,6 @@ public class Stats : MonoBehaviour
 
         // Memperbarui tampilan teks energi
         UpdatetextStats();
-        Debug.Log("Update: " + gameObject.GetComponentInParent<RectTransform>().name + "" + totalCoin);
     }
 
     private void UpdatetextStats()
