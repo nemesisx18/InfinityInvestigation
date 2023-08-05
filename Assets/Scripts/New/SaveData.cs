@@ -11,6 +11,8 @@ public class SaveData : MonoBehaviour
     public List<Rating> Leaderboard_2 = new List<Rating>();
     public List<Rating> Leaderboard_3 = new List<Rating>();
 
+    public int Coin;
+
     public string CurrentUsername;
 
     private const string _prefsKey = "DatabaseUser";
@@ -72,5 +74,10 @@ public class SaveData : MonoBehaviour
     public void SetUsername(string name)
     {
         CurrentUsername = name;
+    }
+
+    public void ChangeCoinValue(int value)
+    {
+        Coin = value;
     }
 }

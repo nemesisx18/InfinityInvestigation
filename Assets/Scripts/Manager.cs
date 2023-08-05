@@ -110,9 +110,11 @@ public class Manager : MonoBehaviour
     {
         nextScene.SetActive(true);
         rewardTXT.text = "Skor Akhir : +" + score;
-        int plusJadiCoin = PlayerPrefs.GetInt("coin");
+        //int plusJadiCoin = PlayerPrefs.GetInt("coin");
+        int plusJadiCoin = SaveData.SaveInstance.Coin;
         plusJadiCoin += score;
-        PlayerPrefs.SetInt("coin", plusJadiCoin);
+        //PlayerPrefs.SetInt("coin", plusJadiCoin);
+        SaveData.SaveInstance.ChangeCoinValue(plusJadiCoin);
         uda = true;
         uda = true;
         isActive = false;

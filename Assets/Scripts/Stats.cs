@@ -11,18 +11,22 @@ public class Stats : MonoBehaviour
 
     public void Update()
     {
-        totalCoin = PlayerPrefs.GetInt("coin"); 
-        totalEnergy = PlayerPrefs.GetInt("energy");
+        //totalCoin = PlayerPrefs.GetInt("coin");
+        //Debug.Log("Update: " + gameObject.GetComponentInParent<RectTransform>().name + "" + totalCoin);
+        //totalEnergy = PlayerPrefs.GetInt("energy");
     }
     private void Start()
     {
         textStats = GetComponent<Text>();
         // Menginisialisasi total energi awal
+        totalCoin = SaveData.SaveInstance.Coin;
+
+        Debug.Log(PlayerPrefs.GetInt("NP"));
 
         if(PlayerPrefs.GetInt("NP") == 1)
         {
             totalEnergy = PlayerPrefs.GetInt("energy");
-            totalCoin = PlayerPrefs.GetInt("coin");
+            //totalCoin = PlayerPrefs.GetInt("coin");
         }
         else
         {
@@ -32,6 +36,7 @@ public class Stats : MonoBehaviour
 
         // Memperbarui tampilan teks energi
         UpdatetextStats();
+        Debug.Log("Update: " + gameObject.GetComponentInParent<RectTransform>().name + "" + totalCoin);
     }
 
     private void UpdatetextStats()
@@ -63,6 +68,7 @@ public class Stats : MonoBehaviour
 
             if (totalEnergy < energyAmount)
             {
+                Debug.Log("kurang");
                 return;
             }
 
@@ -73,14 +79,14 @@ public class Stats : MonoBehaviour
             totalEnergy = Mathf.Max(totalEnergy, 0);
             PlayerPrefs.SetInt("energy", totalEnergy);
 
-            //energyReductionAnimation.klikKurangin();
+            energyReductionAnimation.klikKurangin();
         }
         else
         {
 
             int coinAmount = int.Parse(amount);
             Debug.Log(coinAmount);
-            Debug.Log("energy:" + totalCoin);
+            Debug.Log("coin:" + totalCoin);
 
             // Mengurangi total energi
             if ( totalCoin < coinAmount)
@@ -92,7 +98,10 @@ public class Stats : MonoBehaviour
 
             // Memastikan total energi tidak negatif
             totalCoin = Mathf.Max(totalCoin, 0);
-            PlayerPrefs.SetInt("coin", totalCoin);
+            //PlayerPrefs.SetInt("coin", totalCoin);
+            SaveData.SaveInstance.ChangeCoinValue(totalCoin);
+
+            energyReductionAnimation.klikKurangin();
         }
         // Memperbarui tampilan teks energi
         UpdatetextStats();
@@ -103,7 +112,8 @@ public class Stats : MonoBehaviour
         totalEnergy = 50;
         totalCoin = 100;
         PlayerPrefs.SetInt("energy", totalEnergy);
-        PlayerPrefs.SetInt("coin", totalCoin);
+        //PlayerPrefs.SetInt("coin", totalCoin);
+        SaveData.SaveInstance.ChangeCoinValue(totalCoin);
 
         PlayerPrefs.SetInt("NP", 1);
     }

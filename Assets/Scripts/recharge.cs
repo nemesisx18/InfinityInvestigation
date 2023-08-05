@@ -10,15 +10,22 @@ public class recharge : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("rechargee", 120);
+        Invoke("rechargee", 60);
     }
 
+    [ContextMenu("rechare enegry")]
     public void rechargee()
     {
         int total = PlayerPrefs.GetInt("energy");
+        Debug.Log(total);
+        if(total >= 50)
+        {
+            return;
+        }
+
         total += 50;
         PlayerPrefs.SetInt("energy", total);
-        Invoke("rechargee", 120);
+        Invoke("rechargee", 60);
 
     }
 

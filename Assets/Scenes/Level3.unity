@@ -5880,7 +5880,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 983c7f08ac6d983428da48976d28f988, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6168,7 +6168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4546473662277562829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6271,7 +6271,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 983c7f08ac6d983428da48976d28f988, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7148,7 +7148,7 @@ GameObject:
   - component: {fileID: 4546473662403010488}
   - component: {fileID: 4546473662403010470}
   m_Layer: 5
-  m_Name: Image (11)
+  m_Name: Image (11) benar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8454,7 +8454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4546473662662145759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9452,7 +9452,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 983c7f08ac6d983428da48976d28f988, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -11759,7 +11759,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 983c7f08ac6d983428da48976d28f988, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -15013,24 +15013,12 @@ MonoBehaviour:
           m_StringArgument: 20
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6092199920153732631}
-        m_TargetAssemblyTypeName: EnergyReductionAnimation, Assembly-CSharp
-        m_MethodName: klikKurangin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 908158965}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 5480d217b43abbc43a5ad0a7014d4211, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -16752,6 +16740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!1 &8970330624389502828
 GameObject:
   m_ObjectHideFlags: 0
@@ -16767,7 +16756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8970330624389502831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16822,6 +16811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!224 &8970330624403707769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16997,6 +16987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!1 &8970330624648794481
 GameObject:
   m_ObjectHideFlags: 0
@@ -17037,6 +17028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!114 &8970330624661688525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17196,6 +17188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!222 &8970330624888929129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17274,6 +17267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!224 &8970330625050532705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17388,6 +17382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 0}
 --- !u!114 &8970330625112145642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17482,6 +17477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!114 &8970330625141357478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17610,6 +17606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!222 &8970330625222099257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17670,6 +17667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!114 &8970330625328390643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17772,6 +17770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!114 &8970330625425269951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17919,6 +17918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!1 &8970330625540000421
 GameObject:
   m_ObjectHideFlags: 0
@@ -18008,6 +18008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 0}
 --- !u!224 &8970330625648484657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18164,6 +18165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 0}
 --- !u!222 &8970330625892797206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18185,6 +18187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 0
+  energyReductionAnimation: {fileID: 6092199920153732631}
 --- !u!114 &8970330625892797209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18366,6 +18369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 1
+  energyReductionAnimation: {fileID: 0}
 --- !u!224 &8970330626138266921
 RectTransform:
   m_ObjectHideFlags: 0
