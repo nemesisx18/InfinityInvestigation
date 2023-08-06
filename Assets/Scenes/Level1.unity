@@ -1703,7 +1703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tangkap Tersangkaa dan beri hukuman !!!
+  m_Text: Tangkap Tersangka dan beri hukuman !!!
 --- !u!114 &391860719363310878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.04
-  fullText: Tangkap Tersangkaa dan beri hukuman !!!
+  fullText: Tangkap Tersangka dan beri hukuman !!!
 --- !u!224 &391860719363310879
 RectTransform:
   m_ObjectHideFlags: 0

@@ -20344,7 +20344,7 @@ MonoBehaviour:
     m_LineSpacing: 1.1
   m_Text: "Hallo Opsir , Saya berhasil mengidentifikasi tanda pengenal yang anda
     \r\ntemukan !!! Berdasarkan hasil identifikasi dompet itu milik seseorang bernama
-    Wisnu, Saya akan masukan data ini kedalam  kit forensic\r\n"
+    Wisnu, Saya akan masukan data ini kedalam kit forensik"
 --- !u!222 &8677770908184829445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20386,9 +20386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.04
-  fullText: 'Hallo Opsir , Saya berhasil mengidentifikasi tanda pengenal yang anda 
+  fullText: Hallo Opsir , Saya berhasil mengidentifikasi tanda pengenal yang anda 
     temukan !!! Berdasarkan hasil identifikasi dompet itu milik seseorang bernama
-    Wisnu, Saya akan masukan data ini kedalam  kit forensic '
+    Wisnu, Saya akan masukan data ini kedalam kit forensik
 --- !u!82 &8677770908184829448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30685,7 +30685,7 @@ MonoBehaviour:
   typingSpeed: 0.04
   fullText: 'Hallo Opsir hasil identifikasi labor adalah paket mencurigakan yang
     anda amankan adalah sabu sabu !!! tetapi hasil laboratorium menunjukan sidik
-    jari pada peket tersebut adalah milik George tersangka yang sudah di penjara
+    jari pada paket tersebut adalah milik George tersangka yang sudah di penjara
     pada kasus perundungan !!! Saya akan tambahkan data ini kedalam kit forensik '
 --- !u!114 &8677770908872874605
 MonoBehaviour:
@@ -30722,7 +30722,7 @@ MonoBehaviour:
     m_LineSpacing: 1.1
   m_Text: 'Hallo Opsir hasil identifikasi labor adalah paket mencurigakan yang anda
     amankan adalah sabu sabu !!! tetapi hasil laboratorium menunjukan sidik jari
-    pada peket tersebut adalah milik George tersangka yang sudah di penjara pada
+    pada paket tersebut adalah milik George tersangka yang sudah di penjara pada
     kasus perundungan !!! Saya akan tambahkan data ini kedalam kit forensik
 
 '
