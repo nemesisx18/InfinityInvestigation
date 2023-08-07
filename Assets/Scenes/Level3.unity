@@ -3515,6 +3515,13 @@ MonoBehaviour:
   rewardTXT: {fileID: 4546473661704132857}
   puzzleDone: 0
   leaderboard: {fileID: 768063442}
+  isLevel2: 0
+  NextLevelBtn: {fileID: 0}
+  on1: 0
+  on2: 0
+  on3: 0
+  ShareFacebook: {fileID: 546198672}
+  recharge: {fileID: 1346056601}
 --- !u!224 &4546473661795450433
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7195,10 +7202,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 546198672}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 4546473661795450432}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: CheckUserTopThree
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9722,24 +9729,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 8970330624331958143}
-        m_TargetAssemblyTypeName: Stats, Assembly-CSharp
-        m_MethodName: DecreaseEnergy
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 20
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 908158965}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 983c7f08ac6d983428da48976d28f988, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 781f698566737c34786540db588c74e2, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

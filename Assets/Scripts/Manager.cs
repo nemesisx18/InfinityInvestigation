@@ -16,6 +16,21 @@ public class Manager : MonoBehaviour
 
     [SerializeField] private Leaderboard leaderboard;
 
+    [Header("Level 2")]
+    public bool isLevel2 = false;
+    public GameObject HandImg;
+    public GameObject NextLevelBtn;
+
+    [Header("Leaderboard standing")]
+    public bool on1 = false;
+    public bool on2 = false;
+    public bool on3 = false;
+
+    public GameObject ShareFacebook;
+    public recharge recharge;
+
+    private SaveData saveData;
+
     private void Awake()
     {
         if (ManagerInstance == null)
@@ -31,6 +46,8 @@ public class Manager : MonoBehaviour
     private void Start()
     {
         timer = 0;
+
+        saveData = SaveData.SaveInstance;
     }
     void Update()
     {
@@ -108,15 +125,58 @@ public class Manager : MonoBehaviour
 
     public void GameEnd()
     {
+        if(isLevel2 && score < 60)
+        {
+            HandImg.SetActive(false);
+            NextLevelBtn.SetActive(false);
+        }
+        
         nextScene.SetActive(true);
         rewardTXT.text = "Skor Akhir : +" + score;
-        //int plusJadiCoin = PlayerPrefs.GetInt("coin");
         int plusJadiCoin = SaveData.SaveInstance.Coin;
         plusJadiCoin += score;
-        //PlayerPrefs.SetInt("coin", plusJadiCoin);
         SaveData.SaveInstance.ChangeCoinValue(plusJadiCoin);
         uda = true;
         uda = true;
         isActive = false;
+    }
+
+    public void CheckUserTopThree()
+    {
+        string temp = saveData.CurrentUsername;
+
+        for (int i = 0; i < saveData.Leaderboard_1.Count; i++)
+        {
+            if (saveData.Leaderboard_1[i].Username.Contains(temp))
+            {
+                on1 = true;
+                break;
+            }
+        }
+        for (int i = 0; i < saveData.Leaderboard_2.Count; i++)
+        {
+            if (saveData.Leaderboard_2[i].Username.Contains(temp))
+            {
+                on2 = true;
+                break;
+            }
+        }
+        for (int i = 0; i < saveData.Leaderboard_3.Count; i++)
+        {
+            if (saveData.Leaderboard_3[i].Username.Contains(temp))
+            {
+                on3 = true;
+                break;
+            }
+        }
+
+        if(on1 && on2 && on3)
+        {
+            ShareFacebook.SetActive(true);
+        }
+        else
+        {
+            recharge.relog();
+        }
     }
 }
