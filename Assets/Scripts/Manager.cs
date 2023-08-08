@@ -20,6 +20,7 @@ public class Manager : MonoBehaviour
     public bool isLevel2 = false;
     public GameObject HandImg;
     public GameObject NextLevelBtn;
+    public GameObject TimeoutPanel;
 
     [Header("Leaderboard standing")]
     public bool on1 = false;
@@ -137,6 +138,14 @@ public class Manager : MonoBehaviour
         plusJadiCoin += score;
         SaveData.SaveInstance.ChangeCoinValue(plusJadiCoin);
         uda = true;
+        uda = true;
+        isActive = false;
+    }
+
+    public void ForceEndGame()
+    {
+        TimeoutPanel.SetActive(true);
+        score = 0;
         uda = true;
         isActive = false;
     }

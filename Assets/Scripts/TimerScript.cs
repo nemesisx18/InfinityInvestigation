@@ -29,7 +29,7 @@ public class TimerScript : MonoBehaviour
         // Jika waktu mencapai batas waktu, lakukan sesuatu di sini
         if (currentTime <= 0 && timerIsRunning)
         {
-            Manager.ManagerInstance.GameEnd();
+            Manager.ManagerInstance.ForceEndGame();
             timerIsRunning = false;
 
             string timerString = string.Format("{0:00}:{1:00}", 0, 0);
